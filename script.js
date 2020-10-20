@@ -6,7 +6,7 @@ searchForm.addEventListener('submit', function (e){
     let result = "";
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
+    xhr.open('GET', `https://api.icndb.com/jokes/random/${number}`, true);
 
 
     xhr.onload = function (){
@@ -24,7 +24,7 @@ searchForm.addEventListener('submit', function (e){
 
             outPut.innerHTML = result;
         }
-    }
+    };
     xhr.send();
 
     // HTTP Request Status
